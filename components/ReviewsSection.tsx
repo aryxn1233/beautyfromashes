@@ -170,7 +170,7 @@ export default function ReviewsSection() {
               transition={{
                 duration: 0.6,
                 delay: i * 0.1,
-                ease: [0.76, 0, 0.24, 1],
+                ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
               }}
               whileHover={{ y: -6 }}
               style={{

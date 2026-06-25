@@ -23,7 +23,7 @@ const itemVariant = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 0.6, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] },
   },
 };
 
@@ -73,7 +73,7 @@ export default function AboutSection() {
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
           style={{ position: "relative" }}
         >
           <div

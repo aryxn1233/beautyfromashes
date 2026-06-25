@@ -35,7 +35,7 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, delay: 2.2, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 0.8, delay: 2.2, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
         style={{
           position: "fixed",
           top: 0,
@@ -242,7 +242,7 @@ export default function Navbar() {
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
             style={{
               position: "fixed",
               inset: 0,

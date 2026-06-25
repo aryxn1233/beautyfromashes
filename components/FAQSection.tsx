@@ -54,7 +54,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
       transition={{
         duration: 0.5,
         delay: index * 0.08,
-        ease: [0.76, 0, 0.24, 1],
+        ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
       }}
       style={{
         borderBottom: "1px solid rgba(255,255,255,0.05)",
@@ -103,7 +103,7 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
 
         <motion.div
           animate={{ rotate: open ? 45 : 0 }}
-          transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
           style={{
             flexShrink: 0,
             width: "28px",
@@ -129,19 +129,18 @@ function FAQItem({ faq, index }: { faq: (typeof faqs)[0]; index: number }) {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
           >
             <div
               style={{
                 paddingBottom: "28px",
-                paddingLeft: "34px",
+                paddingLeft: "24px",
                 color: "rgba(245,245,245,0.5)",
                 fontSize: "0.9rem",
                 lineHeight: 1.9,
                 fontWeight: 300,
                 borderLeft: "1px solid rgba(212,175,55,0.2)",
                 marginLeft: "8px",
-                paddingLeft: "24px",
               }}
             >
               {faq.answer}

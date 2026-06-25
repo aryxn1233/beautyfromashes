@@ -53,7 +53,7 @@ export default function ContactSection() {
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
           >
             <div
               style={{
@@ -223,7 +223,7 @@ export default function ContactSection() {
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.15, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.8, delay: 0.15, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
         >
           {/* Interactive embedded map */}
           <div

@@ -323,7 +323,7 @@ export default function PortfolioSection() {
               initial={{ scale: 0.85, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.85, opacity: 0, y: 20 }}
-              transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
+              transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] as [number, number, number, number] }}
               onClick={(e) => e.stopPropagation()}
               style={{
                 position: "relative",

@@ -142,7 +142,7 @@ function ExperienceBlock({
       <motion.div
         initial={{ opacity: 0, x: exp.reverse ? 60 : -60 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
         style={{ position: "relative", direction: "ltr" }}
       >
         <div
@@ -188,7 +188,7 @@ function ExperienceBlock({
       <motion.div
         initial={{ opacity: 0, x: exp.reverse ? -60 : 60 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.8, delay: 0.15, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 0.8, delay: 0.15, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
         style={{ direction: "ltr" }}
       >
         <div

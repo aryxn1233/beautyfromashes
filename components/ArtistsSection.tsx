@@ -58,7 +58,7 @@ function ArtistCard({
       transition={{
         duration: 0.7,
         delay: index * 0.15,
-        ease: [0.76, 0, 0.24, 1],
+        ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

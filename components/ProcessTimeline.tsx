@@ -127,7 +127,7 @@ export default function ProcessTimeline() {
             <motion.div
               initial={{ scaleX: 0 }}
               animate={isInView ? { scaleX: 1 } : {}}
-              transition={{ duration: 1.5, ease: [0.76, 0, 0.24, 1], delay: 0.3 }}
+              transition={{ duration: 1.5, ease: [0.76, 0, 0.24, 1] as [number, number, number, number], delay: 0.3 }}
               style={{
                 height: "100%",
                 background: "linear-gradient(90deg, transparent, #9A1B1B, #D4AF37, transparent)",
@@ -153,7 +153,7 @@ export default function ProcessTimeline() {
                 transition={{
                   duration: 0.6,
                   delay: 0.3 + i * 0.15,
-                  ease: [0.76, 0, 0.24, 1],
+                  ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
                 }}
                 style={{ textAlign: "center", position: "relative" }}
               >

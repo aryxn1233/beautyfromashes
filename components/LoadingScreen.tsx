@@ -27,7 +27,7 @@ export default function LoadingScreen() {
         <motion.div
           className="loading-screen"
           exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] as [number, number, number, number] }}
         >
           {/* Ember particles */}
           {Array.from({ length: 8 }).map((_, i) => (

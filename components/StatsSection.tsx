@@ -98,7 +98,7 @@ export default function StatsSection() {
             transition={{
               duration: 0.7,
               delay: i * 0.12,
-              ease: [0.76, 0, 0.24, 1],
+              ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
             }}
             style={{
               padding: "50px 32px",
@@ -222,7 +222,7 @@ export default function StatsSection() {
               transition={{
                 duration: 0.6,
                 delay: 0.5 + i * 0.08,
-                ease: [0.76, 0, 0.24, 1],
+                ease: [0.76, 0, 0.24, 1] as [number, number, number, number],
               }}
               whileHover={{ y: -6, borderColor: "rgba(212,175,55,0.3)" }}
               style={{
