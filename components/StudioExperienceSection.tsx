@@ -45,9 +45,9 @@ export default function StudioExperienceSection() {
     <section
       id="experience"
       ref={ref}
+      className="py-16 lg:py-[120px]"
       style={{
         background: "#090909",
-        padding: "120px 0",
         position: "relative",
         overflow: "hidden",
       }}
@@ -99,10 +99,10 @@ export default function StudioExperienceSection() {
 
       {/* Alternating sections */}
       <div
+        className="px-6 lg:px-10"
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "0 40px",
           display: "flex",
           flexDirection: "column",
           gap: "120px",

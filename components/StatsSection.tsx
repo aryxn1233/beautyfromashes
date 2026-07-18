@@ -71,24 +71,22 @@ export default function StatsSection() {
     <section
       id="services"
       ref={ref}
+      className="pb-16 md:pb-20"
       style={{
         background: "#141414",
         position: "relative",
         overflow: "hidden",
-        paddingBottom: "80px",
       }}
     >
       {/* Stats grid */}
       <div
+        className="stats-grid px-6 lg:px-10 py-16 lg:pt-[100px] lg:pb-20"
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
-          padding: "100px 40px 80px",
           display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
           gap: "2px",
         }}
-        className="stats-grid"
       >
         {stats.map((stat, i) => (
           <motion.div
@@ -153,7 +151,7 @@ export default function StatsSection() {
       </div>
 
       {/* Why choose us cards */}
-      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 40px" }}>
+      <div className="px-6 lg:px-10" style={{ maxWidth: "1400px", margin: "0 auto" }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -296,11 +294,12 @@ export default function StatsSection() {
       </div>
 
       <style>{`
+        .stats-grid { grid-template-columns: repeat(4, 1fr); }
         @media (max-width: 768px) {
-          .stats-grid { grid-template-columns: 1fr 1fr !important; }
+          .stats-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 480px) {
-          .stats-grid { grid-template-columns: 1fr !important; }
+          .stats-grid { grid-template-columns: 1fr; }
         }
       `}</style>
     </section>

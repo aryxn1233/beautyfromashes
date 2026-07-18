@@ -160,17 +160,17 @@ export default function FAQSection() {
     <section
       id="faq"
       ref={ref}
+      className="py-16 lg:py-[120px]"
       style={{
         background: "#141414",
-        padding: "120px 0",
         position: "relative",
       }}
     >
       <div
+        className="px-6 lg:px-10"
         style={{
           maxWidth: "900px",
           margin: "0 auto",
-          padding: "0 40px",
         }}
       >
         {/* Header */}

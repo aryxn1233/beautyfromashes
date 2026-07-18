@@ -35,9 +35,9 @@ export default function AboutSection() {
     <section
       id="about"
       ref={ref}
+      className="py-16 lg:py-[120px]"
       style={{
         background: "#090909",
-        padding: "120px 0",
         position: "relative",
         overflow: "hidden",
       }}
@@ -58,16 +58,14 @@ export default function AboutSection() {
       />
 
       <div
+        className="about-grid px-6 lg:px-10"
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
-          padding: "0 40px",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
           gap: "80px",
           alignItems: "center",
         }}
-        className="about-grid"
       >
         {/* Left: Image */}
         <motion.div
@@ -278,7 +276,10 @@ export default function AboutSection() {
       </div>
 
       <style>{`
-        @media (max-width: 768px) {
+        .about-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 900px) {
           .about-grid {
             grid-template-columns: 1fr !important;
             gap: 50px !important;

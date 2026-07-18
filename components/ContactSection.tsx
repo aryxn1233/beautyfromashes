@@ -17,9 +17,9 @@ export default function ContactSection() {
     <section
       id="contact"
       ref={ref}
+      className="py-16 lg:py-[120px]"
       style={{
         background: "#141414",
-        padding: "120px 0",
         position: "relative",
         overflow: "hidden",
       }}
@@ -37,16 +37,14 @@ export default function ContactSection() {
       />
 
       <div
+        className="contact-grid px-6 lg:px-10"
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
-          padding: "0 40px",
           display: "grid",
-          gridTemplateColumns: "1fr 1.5fr",
           gap: "80px",
           alignItems: "start",
         }}
-        className="contact-grid"
       >
         {/* Left: Info */}
         <div>
@@ -227,10 +225,10 @@ export default function ContactSection() {
         >
           {/* Interactive embedded map */}
           <div
+            className="h-[350px] md:h-[500px]"
             style={{
               position: "relative",
               width: "100%",
-              height: "500px",
               borderRadius: "2px",
               overflow: "hidden",
               border: "1px solid rgba(255,255,255,0.06)",
@@ -350,8 +348,9 @@ export default function ContactSection() {
       </div>
 
       <style>{`
+        .contact-grid { grid-template-columns: 1fr 1.5fr; }
         @media (max-width: 900px) {
-          .contact-grid { grid-template-columns: 1fr !important; gap: 50px !important; }
+          .contact-grid { grid-template-columns: 1fr; gap: 50px !important; }
         }
       `}</style>
     </section>

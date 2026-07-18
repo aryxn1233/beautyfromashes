@@ -53,10 +53,10 @@ export default function Footer() {
 
       {/* Main footer content */}
       <div
+        className="px-6 lg:px-10 py-16 lg:pt-20 lg:pb-10"
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
-          padding: "80px 40px 40px",
         }}
       >
         <div
@@ -330,11 +330,12 @@ export default function Footer() {
       </div>
 
       <style>{`
+        .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
         @media (max-width: 900px) {
-          .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 40px !important; }
+          .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px !important; }
         }
         @media (max-width: 600px) {
-          .footer-grid { grid-template-columns: 1fr !important; }
+          .footer-grid { grid-template-columns: 1fr; }
         }
       `}</style>
     </footer>

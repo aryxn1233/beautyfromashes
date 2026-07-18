@@ -283,9 +283,9 @@ export default function ArtistsSection() {
     <section
       id="artists"
       ref={ref}
+      className="py-16 lg:py-[120px]"
       style={{
         background: "#090909",
-        padding: "120px 0",
         position: "relative",
         overflow: "hidden",
       }}
@@ -304,7 +304,7 @@ export default function ArtistsSection() {
         }}
       />
 
-      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 40px" }}>
+      <div className="px-6 lg:px-10" style={{ maxWidth: "1400px", margin: "0 auto" }}>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

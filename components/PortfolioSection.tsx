@@ -95,13 +95,13 @@ export default function PortfolioSection() {
     <section
       id="portfolio"
       ref={ref}
+      className="py-16 lg:py-[120px]"
       style={{
         background: "#141414",
-        padding: "120px 0",
         position: "relative",
       }}
     >
-      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "0 40px" }}>
+      <div className="px-6 lg:px-10" style={{ maxWidth: "1400px", margin: "0 auto" }}>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -307,6 +307,7 @@ export default function PortfolioSection() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={() => setLightbox(null)}
+            className="p-6 md:p-10"
             style={{
               position: "fixed",
               inset: 0,
@@ -316,7 +317,6 @@ export default function PortfolioSection() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              padding: "40px",
             }}
           >
             <motion.div
