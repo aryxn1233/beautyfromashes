@@ -115,7 +115,6 @@ export default function Navbar() {
           {/* Desktop Links */}
           <div
             style={{
-              display: "flex",
               alignItems: "center",
               gap: "32px",
             }}
@@ -191,12 +190,11 @@ export default function Navbar() {
               background: "none",
               border: "none",
               cursor: "none",
-              display: "flex",
               flexDirection: "column",
               gap: "5px",
               padding: "8px",
             }}
-            className="lg:hidden"
+            className="flex lg:hidden"
           >
             <motion.span
               animate={{
